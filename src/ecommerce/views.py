@@ -13,7 +13,7 @@ def home_page(request):
         "premium":"yeahhh",
     }
     if request.user.is_authenticated():
-        context["premium" ] = "Yeahhh"
+        context["premium"] = "Yeahhh"
     return render(request, "home_page.html", context)
 
 def about_page(request):

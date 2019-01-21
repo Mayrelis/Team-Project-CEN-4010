@@ -9,7 +9,6 @@ from .models import Product
 # Create your views here.
 
 class ProductFeaturedListView(ListView):
-    #queryset = Product.objects.all()
     template_name = "products/list.html"
 
     def get_queryset(self, *args, **kwargs):
