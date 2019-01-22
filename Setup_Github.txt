@@ -1,0 +1,8 @@
+1. Go To:
+https://desktop.github.com/
+2.Download ind isntall app
+3.Once installed go to Github webpage and select clone or download.
+4. Select Open in desktop ( once seected , the app is going to create a local repository in  your PC) all data/changes must be saved in that local folder and then push to development branch.
+Recommendations:
+Always do a pull before start working in your code.
+ 

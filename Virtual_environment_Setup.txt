@@ -1,0 +1,5 @@
+virtualenv . (to create a virtual environment for the project, it has to be created inside the project folder, this function creates the executables)
+./Scripts/activate ( activate the functions installed in virtual environment)
+pip install django==1.11.5 (once activated install django for that folder0
+django-admin.py startproject <nameofproject> . (initialize the project)
+python manage.py runserver (initializes the server)
