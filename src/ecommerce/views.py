@@ -13,20 +13,20 @@ def home_page(request):
         "premium":"yeahhh",
     }
     if request.user.is_authenticated():
-        context["premium"] = "Yeahhh"
+        context["premium_content"] = "Yeahhh"
     return render(request, "home_page.html", context)
 
 def about_page(request):
     context = {
         "title":"About page!",
-        "content":"Welcome to the about page",
+        "content":"Welcome to the about page"
     }
     return render(request, "home_page.html", context)
 
 def contact_page(request):
-    contact_form = ContactForm()
+    contact_form = ContactForm(request.POST or None)
     context = {
-        "title":"Contact page",
+        "title":"Contact",
         "content":"Welcome to the contact page",
         "form": contact_form
     }
