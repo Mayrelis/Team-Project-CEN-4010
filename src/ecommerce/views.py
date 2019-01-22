@@ -9,7 +9,7 @@ from .forms import ContactForm, LoginForm, RegisterForm
 def home_page(request):
     context = {
         "title":"Hello World!",
-        "content":"Welcome to the homepage",
+        "content":"Welcome to the homepage !!!!!",
         "premium":"yeahhh",
     }
     if request.user.is_authenticated():
