@@ -12,8 +12,8 @@ def home_page(request):
         "content":"Welcome to the homepage !!!!!",
         "premium":"yeahhh",
     }
-    if request.user.is_authenticated():
-        context["premium_content"] = "Yeahhh"
+    # if request.user.is_authenticated():
+    #     context["premium_content"] = "Yeahhh"
     return render(request, "home_page.html", context)
 
 def about_page(request):
