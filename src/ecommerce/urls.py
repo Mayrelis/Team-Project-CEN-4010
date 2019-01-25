@@ -38,7 +38,7 @@ urlpatterns = [
     url(r'^contact/$', contact_page),
     url(r'^login/$', login_page, name='login'),
     url(r'^register/$', register_page, name='register'),
-    url(r'^products/', include("bookstore.urls")),
+    url(r'^products/', include("bookstore.urls"), name='detail'),
     # url(r'^featured/$', ProductFeaturedListView.as_view()),
     # url(r'^featured/(?P<pk>\d+)/$',ProductFeaturedDetailView.as_view()),
     # url(r'^products/$', ProductListView.as_view()),
